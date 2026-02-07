@@ -1,0 +1,20 @@
+
+
+<!-- event is a object that has all the properties of button which is sent form the browser  -->
+
+
+<h1 id="ele">Name</h1>
+
+<button onclick="changeName(event)">John</button>
+<button onclick="changeName(event)">Praveen</button>
+<button onclick="changeName(event)">Karthi</button>
+<script>
+
+    var ele = document.getElementById('ele')
+
+    function changeName(txt){
+        // console.log(txt.target)
+        ele.innerText = txt.target.innerText
+    } 
+
+</script>

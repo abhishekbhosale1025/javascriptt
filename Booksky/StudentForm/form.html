@@ -1,0 +1,74 @@
+<h1>Studen Form</h1>
+
+<form id="studentForm" onsubmit="onSubmit(event)">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" ><br><br>
+    
+    <label for="grade">Grade:</label>
+    <input type="text" id="grade" name="grade" ><br><br>
+    
+    <button onclick="onSubmit(event)">Save</button>
+
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody id="studentTableBody">
+               
+            </tbody>
+        </table>
+    </div>
+
+</form>
+
+<script>
+    const studentForm = document.getElementById('studentForm')
+
+    const studentTableBody = document.getElementById('studentTableBody')
+
+    const deleteNow=()=>{
+        var deleteBtn = event.target
+        deleteBtn.parentElement.remove()  
+    }
+
+    const onSubmit=(event)=>{
+            event.preventDefault()
+            var tr = document.createElement('tr')
+
+            const name = document.getElementById('name').value
+            const grade = document.getElementById('grade').value
+
+            var tdName = document.createElement('td')
+            var tdGrade = document.createElement('td')
+            var deleteBtn = document.createElement('button')
+
+           
+            tdName.innerText = name
+            tdGrade.innerText = grade
+            deleteBtn.innerText = "delete"
+
+            tr.append(tdName)
+            tr.append(tdGrade)
+            tr.append(deleteBtn)
+            studentTableBody.append(tr)
+            deleteBtn.setAttribute("onclick","deleteNow()")
+
+    }
+
+  
+
+
+
+   
+  
+  
+
+
+
+
+    
+</script>

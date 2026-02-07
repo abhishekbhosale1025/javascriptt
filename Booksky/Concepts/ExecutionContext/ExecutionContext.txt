@@ -1,0 +1,23 @@
+Everything in js happes inside an Execution Context
+
+It has two components and 
+    > Memory component/Variable Environmnet : All the variables and fucntions are store 
+    > Code component/Thread of execution : Where the whole code execuded line by line 
+
+Two phases of globle execution context
+    > Memory allocation phase allocateds Memory for     
+        - variables its undefine
+        - function it copies whole function
+    > Code execution phase : the JS code executed line by line 
+        - for fucntion invocation it again created the execution context
+
+Call stack/Execution conetext stack/Program stack/Control stack/Runtime stack/Machine stack :
+             The whole execution context is pushed inside it , like the globle one first 
+             then the following onces once the code is execute it pops out of the stack
+             - Call stack maintains the order of execution conetext
+
+> JS is a synchronouus single threaded lang
+
+
+
+

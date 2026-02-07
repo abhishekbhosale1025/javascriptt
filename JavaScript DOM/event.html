@@ -1,0 +1,30 @@
+<h1 id="title">The Title</h1>
+<button onclick="buttonClicked()">Change title</button>
+
+<script>
+
+    function buttonClicked(){
+        var title = document.getElementById("title")
+        title.textContent = "The title has been changed"
+    }
+
+</script>
+<br><br>
+<input id="num1" value="3">
+<input id="num2" value="9">
+
+<button onclick='addNumbers()'>Add</button>
+<p id="result">Result : </p>
+
+<script>
+
+    function addNumbers(){
+  
+        var num1 = document.getElementById("num1").value
+        var num2 = document.getElementById("num2").value
+        console.log(num1,num2)
+        var total = Number(num1) + Number(num2)
+        document.getElementById("result").textContent = total
+    }
+</script>
+

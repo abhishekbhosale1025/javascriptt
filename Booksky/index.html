@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+    <div class="nav">
+        <h1>Booksky</h1>
+    </div> 
+
+    <div class="main-container">
+        <div class="container">
+            <h2>My first book</h2>
+            <p>Your one-stop destination for all your reading needs. Explore a vast collection of books across various genres and authors. Happy reading!</p>
+            <button onclick="deleteBook(event)">Delete</button>
+        </div>
+    </div>
+    <div class='overlay-container'>
+
+    </div>
+    <div class="popup-conatainer">
+        <form>
+            <input type="text" id="book-name" placeholder="Book Name" autocomplete="off">
+            <br>
+            <input type="text" id="author-name" placeholder="Author Name" autocomplete="off">
+            <br>
+            <textarea id="description" placeholder="Description" autocomplete="off"></textarea>
+            <br>
+            <button class="add-button">Add Book</button>
+            <button class="cancel-button">Cancel</button>
+        </form>
+    </div>
+    <button class="form-button">+</button>
+    <script src="script.js"></script> 
+</body>
+</html>

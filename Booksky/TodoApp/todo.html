@@ -1,0 +1,27 @@
+<input id="input">
+<button onclick="Add()">Add</button>
+<ul id="listContainer">
+</ul>
+<script>
+
+     var input = document.getElementById('input')
+
+     const Add=()=>{
+        var input = document.getElementById('input')
+        var ul = document.getElementById('listContainer')
+        var list = document.createElement('li')
+        var deleteBtn = document.createElement('button')
+        deleteBtn.innerText = "delete"
+        deleteBtn.setAttribute("id","delete")
+        deleteBtn.setAttribute("onclick","deleteList()")
+        ul.append(list)
+        list.innerText = input.value
+        list.append(deleteBtn)
+     }
+
+    const deleteList=()=>{
+        var deleteBtn = document.getElementById('delete')
+        deleteBtn.parentElement.remove()
+    }
+
+</script>

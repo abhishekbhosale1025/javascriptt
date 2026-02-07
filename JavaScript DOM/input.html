@@ -1,0 +1,15 @@
+
+        <input id="inputBox" onkeyup="updateResult()" placeholder="Type something...">
+        <!-- <button onclick="updateResult()">Update Result</button> -->
+        <h1 id="result"></h1>
+<script>
+   
+   function  updateResult() {
+        var inputBox = document.getElementById("inputBox").value
+        result = inputBox
+        console.log(result)
+        document.getElementById("result").textContent = result
+   } 
+      
+
+</script>

@@ -1,0 +1,33 @@
+// guess the number generatored by computer between 1 to 10
+// user have to guess the numberif he guessed right he wins otherwise he loses
+// score will be 10 initially and will be decremented by 1 for every wrong guess
+
+
+<h1>Guess the Number from 1 to 10</h1>
+<input id="inputNumber">
+<button onclick="checkNumber()">Check</button>
+<h2 id="result">Please enter a number and click on check!</h2>
+<h2 id="score">Scoure : 10</h2>
+
+<script>
+        var input = Number(document.getElementById('inputNumber'))
+        var Res = document.getElementById('result')
+        var scoreElement = document.getElementById('score')
+        
+        var score = 10
+    
+    function checkNumber(){
+        var inputElement = Number(document.getElementById('inputNumber').value)
+        var theNumber = Math.floor(Math.random() * 10 + 1)
+        console.log(theNumber,inputElement)
+        if(theNumber==inputElement){ 
+           
+            Res.textContent = "You guessed it right! The number was " + theNumber
+            
+        }else{
+            score = score - 1
+            Res.textContent = "Wrong guess! The number was " + theNumber
+            scoreElement.textContent = "Score : " + score
+            }
+         }
+</script>

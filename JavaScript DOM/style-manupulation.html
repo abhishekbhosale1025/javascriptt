@@ -1,0 +1,33 @@
+<style>
+    div {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(74, 21, 209);
+        transition: 4s;
+    }
+    .widthMax{
+        width: 500px;
+        height: 100px;
+    }
+</style>
+
+<div id="myDiv" >
+    This is a styled div element.
+</div>
+<button onclick="changeColorToRed()" id="red">
+    Click me to changes the color to red
+</button>
+
+<script>
+    var divElement = document.getElementById("myDiv")
+    var buttons = document.getElementById("red")
+
+
+    function changeColorToRed(){
+        divElement.style.backgroundColor = "red"
+        divElement.setAttribute('class','widthMax')
+
+    }
+
+  
+</script>

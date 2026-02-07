@@ -1,0 +1,7 @@
+JavaScript Engine creates a global object whenever you run any JS code. 
+In the case of browsers, this global object is known as `window`
+
+> whenever a js code runs it creats a globle object window and a globle execution context and a this variable created 
+> All the functions and variables and methods inside the window is created by the JS engine in the global space
+> can access it anywhere 
+> this -> points to the window object

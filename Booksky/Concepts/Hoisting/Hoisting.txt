@@ -1,0 +1,10 @@
+Hoisting in JavaScript
+
+> you can access a function and variables even before it is initialised
+    - because memory is allocation in the memory allocation phase of execution context
+
+
+
+Undefined : 
+Not defined :    
+

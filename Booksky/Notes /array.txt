@@ -1,0 +1,11 @@
+html:5 + tab ---> generates the boilerplate of html
+
+to link the style --> <link rel="stylesheet" href="styles.css">
+
+to link js file ----> <script src="script.js"></script>  
+
+Array 
+    > collection of data 
+    var fruits = ['apple','mango','orange']
+
+    > index : to access array elemenst starts from 0,1,2...
